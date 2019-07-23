@@ -40,7 +40,7 @@ Write a SELECT query to obtain the following output:
 * Author ID
 * Royalty of each sale for each author
     * The formular is:
-        ```
+        ```mysql
         sales_royalty = titles.price * sales.qty * titles.royalty / 100 * titleauthor.royaltyper / 100
         ```
     * Note that `titles.royalty` and `titleauthor.royaltyper` are divided by 100 respectively because they are percentage numbers instead of floats.
